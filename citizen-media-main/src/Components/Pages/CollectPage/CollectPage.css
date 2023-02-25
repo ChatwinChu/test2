@@ -1,0 +1,87 @@
+
+@media (min-width: 600px){
+    .gridBlock{
+        margin-top: auto;
+        margin-bottom: 3em;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        display: grid;
+        justify-content: center;
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 599px) { 
+    .gridBlock{
+        margin-top: auto;
+        margin-bottom: 3em;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        display: grid;
+        justify-content: center;
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 416px) { 
+    .gridBlock{
+        margin-top: auto;
+        margin-bottom: 3em;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: grid;
+        justify-content: center;
+        flex-grow: 1;
+    }
+}
+
+
+.collectBlock{
+    width: calc(100% - 2rem);
+	aspect-ratio: 1 / 1;
+
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+    
+    color:black;
+
+    box-shadow: 8px 8px 10px rgba(163,177,198,0.5), -4px -4px 10px rgba(255, 255, 255, 0.7);
+    background-position: center right 1rem;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+
+    transition: padding 100ms ease-in-out;
+}
+
+/*改顏色：喜歡再加*/
+
+/* .collectBlock:hover {
+	background-color: #F6F3DC;
+}
+
+.collectBlock:focus {
+	background-color: #F6F3DC;
+} */
+
+.collectText{
+    margin-top: 10px;
+	margin-bottom: 10px;
+
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+	display: flex;
+	height: 100%;
+	width: 95%; 
+    word-break: break-all;
+    word-wrap: break-word;
+	flex-direction: column;
+}
+
+.collect_img{
+    max-width:75%;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    object-fit:cover;
+}
